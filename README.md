@@ -25,6 +25,6 @@ The website ought to assist people who can give something and those in need to f
 - **Application servers need to be stateless.** This is to avoid scabability problems and data loss.
 - **The use of polyglot persistence is mandatory.** The service layer must depend on abstract data persistence classes/interfaces. Concrete (i.e. technology-specific) data persistence classes need to be packaged into separate modules than the core business logic.
 
-### Development
+### Easy trial
 
 - **One should be able to start up a demo of the application in a matter of minutes.** Someone who just downloaded the source code of the project needs to be able to compile and start up the website in a matter of few minutes. The default, out of the box configuration (which doesn't need to fit for production use at all, obviously) needs to be able to start up on an single desktop PC or notebook with all the features available for trial.
