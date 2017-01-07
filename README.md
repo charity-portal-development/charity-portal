@@ -8,7 +8,7 @@ Two types of articles can be submitted:
  - something is available for free,
  - there's need for something.
  
-The portal ought to assist people who can give something and those in need to find each other effectively.
+The website ought to assist people who can give something and those in need to find each other effectively.
 
 ## Guidelines, principles
 
@@ -18,5 +18,9 @@ The portal ought to assist people who can give something and those in need to fi
 
 ### Maintainability, extensibility
 
-- **The portal needs to be easily deployable, but extensible.** It needs to be infrastructure-agnostic to the maximum possible extent so that it can be deployed in any environments and using any technologies which provide sufficient resources for the expected load. It should not rely on concrete database solutions or IaaS/PaaS/etc. providers, but it has to be extensible so that custom integrations for any technologies can be implemented.
+- **The website needs to be easily deployable, but extensible.** It needs to be infrastructure-agnostic to the maximum possible extent so that it can be deployed in any environments and using any technologies which provide sufficient resources for the expected load. It should not rely on concrete database solutions or IaaS/PaaS/etc. providers, but it has to be extensible so that custom integrations for any technologies can be implemented.
 
+### Architecture
+
+- **Application servers need to be stateless.** This is to avoid scabability problems and data loss.
+- **The use of polyglot persistence is mandatory.** The service layer must depend on abstract data persistence classes/interfaces. Concrete (i.e. technology-specific) data persistence classes need to be packaged into separate modules than the core business logic.
