@@ -27,4 +27,4 @@ The website ought to assist people who can give something and those in need to f
 
 ### Easy trial
 
-- **One should be able to start up a demo of the application in a matter of minutes.** Someone who just downloaded the source code of the project needs to be able to compile and start up the website in a matter of few minutes. The default, out of the box configuration (which doesn't need to fit for production use at all, obviously) needs to be able to start up on an single desktop PC or notebook with all the features available for trial.
+- **One should be able to start up a demo of the application in a matter of minutes.** Someone who just downloaded the source code of the project needs to be able to compile and start up the website in a matter of few minutes. The default, out of the box configuration (which doesn't need to fit for production use at all, obviously) needs to be able to be started up on a single desktop PC or notebook with all the features available for trial - even without internet connection.
