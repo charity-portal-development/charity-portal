@@ -11,7 +11,7 @@ public interface ArticleAdminDAO {
 
 	Article get(String id) throws DataAccessException;
 	
-	List<Article> getAll(Integer fromIndex, Integer itemCount) throws DataAccessException;
+	List<Article> getAll(String accountId, Integer fromIndex, Integer itemCount) throws DataAccessException;
 	
 	void update(String id, Article article) throws DataAccessException;
 	

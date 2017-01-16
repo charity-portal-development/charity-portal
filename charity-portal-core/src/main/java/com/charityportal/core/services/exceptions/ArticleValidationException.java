@@ -9,7 +9,7 @@ public class ArticleValidationException extends ServiceException {
 	private ValidationResult validationResult;
 
 	public ArticleValidationException(ValidationResult validationResult) {
-		super("Article validation exception.");
+		super();
 		this.validationResult = validationResult;
 	}
 

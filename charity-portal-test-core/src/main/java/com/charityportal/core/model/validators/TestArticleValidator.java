@@ -4,10 +4,13 @@ import static org.junit.Assert.*;
 
 import org.junit.Test;
 
+import com.charityportal.core.util.Utilities;
+
 public class TestArticleValidator {
 
 	@Test
 	public void uuidMatcher() throws Exception {
+		assertTrue(ArticleValidator.isValidUUID(Utilities.randomUUID()));
 		assertTrue(ArticleValidator.isValidUUID("544a1eba-1851-4258-9165-747ba952cfc1"));
 		assertFalse(ArticleValidator.isValidUUID(" 544a1eba-1851-4258-9165-747ba952cfc1"));
 		assertFalse(ArticleValidator.isValidUUID("544a1eba-1851-4258-9165-747ba952cfc1 "));
